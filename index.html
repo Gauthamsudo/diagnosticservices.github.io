@@ -10,14 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&family=Inconsolata:wght@400;700;800;900&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script type="text/javascript">
-(function() {
-emailjs.init("user_FCiWwSRsvai92lTyO4Yi2");
-})();
-</script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_FCiWwSRsvai92lTyO4Yi2");
+    })();
+    </script>
 
 </head>
-<body class="font-['Be_Vietnam_Pro']" style="margin: 0; padding: 0; background: linear-gradient(rgba(0,0,0,0.5), #042f66),url(images/background.png); background-size: cover; background-position; center; height: 100vh;">
+<body class="font-['Be_Vietnam_Pro']" style="margin: 0; padding: 0; background: linear-gradient(rgba(0,0,0,0.5), #042f66),url(images/background.png); background-size: cover; background-position: center; height: 100vh;">
     <!--Navbar-->
     <nav class="relative px-4 py-4 flex justify-between items-center bg-white">
       <a class="text-3xl font-bold leading-none" href="#">
@@ -707,28 +707,35 @@ emailjs.init("user_FCiWwSRsvai92lTyO4Yi2");
       <div>
         <span class="uppercase text-sm text-gray-600 font-bold">Full Name</span>
         <input class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-          type="text" placeholder="" id="username">
+          type="text" placeholder="" 
+          id="username">
       </div>
       <div class="mt-8">
         <span class="uppercase text-sm text-gray-600 font-bold">Email</span>
         <input class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-          type="text" id="usermail">
+          type="text" 
+          id="usermail">
       </div>
       <div class="mt-8">
         <span class="uppercase text-sm text-gray-600 font-bold">Message</span>
         <textarea
-          class="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" id="usermsg"></textarea>
+          class="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" 
+          id="usermsg">
+        </textarea>
       </div>
       <div class="mt-8">
         <button
-          class="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
+        onclick='sendMail()'  
+        class="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
           Send Message
         </button>
       </div>
     </div>
   </div>
 </section>
-<!-- Javascript Link -->
+
+
+
 <script src="main.js"></script>
 </body>
 </html>

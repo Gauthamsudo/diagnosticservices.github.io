@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function sendMail(params) {
     var tempParams = {
       user_name: document.getElementById('username').value,
-      user_email: document.getElementById('useremail').value,
+      user_email: document.getElementById('usermail').value,
       user_message: document.getElementById('usermsg').value, 
     };
   
